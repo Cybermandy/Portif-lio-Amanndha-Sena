@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfólio de Amanndha Sena: Marketing, Comunicação e Go-to-Market. Estratégia, criação e execução para conectar marcas, pessoas e negócios.">
+<meta property="og:title" content="Amanndha Sena | Portfólio">
+<meta property="og:description" content="Marketing, Comunicação e Go-to-Market. Think. Grow. Be creative.">
+<meta property="og:image" content="img/sushi-1.jpg">
+<title>Amanndha Sena | Portfólio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800;112,900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@500&display=swap">
+<style>
+/* Layout: faixas cheias em roxo/lima/lilás como no PDF; cabeçalho de seção com eyebrow lima + título forte; cards com borda lima nas fotos */
+:root{
+  --violet:#7A1CFF; --violet-ink:#5B0FD1; --lime:#BEDA45; --lime-soft:#E3EDB0;
+  --lilac:#F1E8FE; --cream:#F2F5DE; --ink:#1C1430; --muted:#5E5670; --surface:#FFFFFF; --line:#DCD2EC;
+  --bg:var(--cream); --on-violet:#FFFFFF;
+  --f-display:"Archivo","Arial Black",system-ui,sans-serif;
+  --f-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"DM Mono",ui-monospace,Menlo,monospace;
+  --r:14px; --max:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --violet:#8A3BFF; --violet-ink:#B48BFF; --lime:#C8E25A; --lime-soft:#2E3416;
+  --lilac:#1D1430; --cream:#140E20; --ink:#F1ECF8; --muted:#A99DBD; --surface:#221838; --line:#3A2D52;
+  --bg:#140E20; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --violet:#8A3BFF; --violet-ink:#B48BFF; --lime:#C8E25A; --lime-soft:#2E3416;
+  --lilac:#1D1430; --cream:#140E20; --ink:#F1ECF8; --muted:#A99DBD; --surface:#221838; --line:#3A2D52;
+  --bg:#140E20; color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--violet)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-stretch:112%;line-height:1.02;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--violet-ink)}
+.band-violet .eyebrow{color:var(--lime)}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--violet);color:var(--on-violet)}
+.nav .wrap{display:flex;align-items:center;gap:20px;padding-block:14px}
+.brand{font-family:var(--f-display);font-weight:900;font-stretch:112%;letter-spacing:.04em;text-decoration:none;display:flex;flex-direction:column;gap:5px;line-height:1}
+.brand::after{content:"";width:34px;height:4px;border-radius:4px;background:var(--lime)}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0 0 0 auto;padding:0;font-size:.92rem}
+.nav ul a{text-decoration:none;opacity:.9}
+.nav ul a:hover{opacity:1;color:var(--lime)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-decoration:none;border-radius:999px;padding:10px 18px;border:0;cursor:pointer;font:inherit;font-weight:700;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-lime{background:var(--lime);color:#1C1430}
+.btn-ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+@media (max-width:820px){.nav ul{display:none}.nav .btn{margin-left:auto}}
+
+/* hero */
+.band-violet{background:var(--violet);color:var(--on-violet)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;padding-block:64px 72px;align-items:end}
+.me{display:flex;align-items:center;gap:18px}
+.me img{width:132px;height:176px;border-radius:26px;object-fit:cover;border:4px solid var(--lime);box-shadow:0 14px 30px -12px rgba(20,8,40,.55);flex:none}
+.me .eyebrow{line-height:1.7}
+@media (max-width:520px){.me img{width:108px;height:144px;border-radius:22px}}
+.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);font-weight:900}
+.hero h1 span{display:block}
+.hero .role{font-family:var(--f-display);font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem);margin-top:18px;color:var(--lime)}
+.hero .pitch{margin-top:18px;max-width:46ch;font-size:1.08rem;opacity:.92}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.mantra{font-family:var(--f-display);font-weight:900;font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:.95;display:flex;flex-direction:column;align-items:flex-start}
+.mantra span{transition:color .4s, transform .4s;color:rgba(255,255,255,.28)}
+.mantra span.on{color:var(--lime);transform:translateX(10px)}
+.hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:32px;font-size:.88rem;line-height:1.4}
+.hero-meta div{border-top:2px solid var(--lime);padding-top:10px}
+@media (max-width:520px){.hero-meta{grid-template-columns:1fr;gap:14px}}
+.hero-meta b{display:block;font-family:var(--f-display);font-size:1.35rem;color:var(--on-violet);line-height:1.1;margin-bottom:4px}
+.hero-meta div{opacity:.9}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding-block:44px 52px}}
+
+/* brands */
+.brands{background:var(--lime);color:#1C1430;border-block:2px solid #1C1430;display:flex;align-items:stretch}
+.brands-label{flex:none;display:flex;flex-direction:column;justify-content:center;gap:2px;background:#1C1430;color:var(--lime);padding-block:12px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:22px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;line-height:1.3;position:relative;z-index:1}
+.brands-label b{font-family:var(--f-display);font-size:1rem;letter-spacing:0;text-transform:none;color:#fff}
+.marquee{flex:1;min-width:0;overflow:hidden;padding-block:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track{display:flex;gap:14px;width:max-content;animation:slide 40s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.logo{flex:none;height:56px;min-width:120px;padding:8px 18px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-weight:800;font-size:1.05rem;color:#1C1430;white-space:nowrap}
+.logo img{max-height:42px;max-width:140px;width:auto;object-fit:contain}
+@media (max-width:560px){.brands{flex-direction:column}.brands-label{flex-direction:row;gap:8px;align-items:baseline;padding-block:10px}}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none;flex-wrap:wrap;width:auto;padding-inline:20px;row-gap:8px}.mantra span{transition:none}html{scroll-behavior:auto}}
+
+/* sections */
+section{padding-block:84px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px;margin-bottom:36px}
+.sec-head h2{font-size:clamp(2rem,4.6vw,3.3rem);font-weight:900;margin-top:10px;max-width:18ch}
+.sec-head p{max-width:46ch;color:var(--muted)}
+.alt{background:var(--lilac)}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.chip{font:inherit;font-size:.9rem;font-weight:500;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 15px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--violet);border-color:var(--violet);color:#fff}
+.chip:hover{border-color:var(--violet)}
+
+/* project grid */
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:960px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.card{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;background:var(--surface);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);transition:transform .2s, box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(90,20,200,.45)}
+.card:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.card .cover{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--violet);border-bottom:3px solid var(--lime)}
+.card .cover img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .cover img{transform:scale(1.05)}
+.card .num{position:absolute;top:12px;left:12px;font-family:var(--f-mono);font-size:.75rem;background:var(--violet);color:#fff;padding:4px 9px;border-radius:6px}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.25rem;font-weight:800}
+.card p{color:var(--muted);font-size:.94rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.tag{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;background:var(--lime-soft);color:var(--ink);padding:3px 8px;border-radius:5px}
+.more{font-weight:700;color:var(--violet-ink);font-size:.9rem}
+
+/* dialog */
+dialog{border:0;padding:0;width:min(1000px,calc(100vw - 32px));max-height:calc(100dvh - 32px);border-radius:18px;background:var(--surface);color:var(--ink);overflow:auto}
+dialog::backdrop{background:rgba(20,8,40,.72);backdrop-filter:blur(3px)}
+.dlg-head{background:var(--violet);color:#fff;padding:28px 28px 24px;position:sticky;top:0;z-index:2}
+.dlg-head .eyebrow{color:var(--lime)}
+.dlg-head h3{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900;margin-top:8px;padding-right:44px}
+.dlg-head p{color:var(--lime);margin-top:8px}
+.close{position:absolute;top:18px;right:18px;width:40px;height:40px;border-radius:50%;border:0;background:var(--lime);color:#1C1430;font-size:1.3rem;cursor:pointer;font-weight:700}
+.dlg-body{padding:28px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:32px}
+@media (max-width:760px){.dlg-body{grid-template-columns:1fr}}
+.blk{display:flex;flex-direction:column;gap:18px}
+.pill{display:inline-block;background:var(--violet);color:#fff;font-weight:700;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:7px;margin-bottom:8px}
+.stats-mini{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stats-mini div{background:var(--lilac);border-radius:10px;padding:12px}
+.stats-mini b{display:block;font-family:var(--f-display);font-size:1.35rem;color:var(--violet-ink);font-variant-numeric:tabular-nums}
+.stats-mini span{font-size:.78rem;color:var(--muted)}
+.gal{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}
+.gal img{width:100%;border-radius:12px;border:2.5px solid var(--lime);cursor:zoom-in;background:var(--lilac)}
+.gal img.wide{grid-column:1/-1}
+.note{font-size:.8rem;color:var(--muted)}
+
+/* zoom */
+.zoom{position:fixed;inset:0;z-index:100;background:rgba(10,4,22,.92);display:flex;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.zoom img{max-height:92dvh;max-width:92vw;border-radius:10px}
+
+/* results */
+.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+@media (max-width:860px){.results{grid-template-columns:1fr}}
+.res{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;grid-template-columns:minmax(0,1fr) 150px;gap:22px}
+@media (max-width:480px){.res{grid-template-columns:1fr}.res img{max-width:200px}}
+.res h3{font-size:1.3rem;font-weight:800}
+.res .period{font-family:var(--f-mono);font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:4px}
+.res dl{margin:20px 0 0;display:grid;gap:12px}
+.res dt{font-family:var(--f-display);font-weight:900;font-size:clamp(1.9rem,3.6vw,2.6rem);color:var(--violet-ink);line-height:1;font-variant-numeric:tabular-nums}
+.res dd{margin:2px 0 0;color:var(--muted);font-size:.9rem}
+.res img{border-radius:12px;border:2.5px solid var(--lime);align-self:start}
+.res .hl{margin-top:16px;font-weight:700}
+.fine{margin-top:18px;font-size:.8rem;color:var(--muted)}
+
+/* automations */
+.band-ink{background:#1C1430;color:#F1ECF8}
+.band-ink .eyebrow{color:var(--lime)}
+.band-ink .sec-head p{color:#BDB2D0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.tab{font:inherit;font-weight:700;background:transparent;color:#F1ECF8;border:1.5px solid #4A3C66;border-radius:999px;padding:9px 18px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--lime);color:#1C1430;border-color:var(--lime)}
+.auto{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:36px;align-items:start}
+@media (max-width:900px){.auto{grid-template-columns:1fr}}
+.auto h3{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900}
+.psr{display:grid;gap:16px;margin-top:22px}
+.psr div{border-left:3px solid var(--lime);padding-left:14px}
+.psr b{display:block;font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin-bottom:2px}
+.psr p{color:#DCD3EA}
+.panel{background:#271C3F;border:1px solid #3E3060;border-radius:16px;padding:24px}
+.panel h4{margin:0 0 14px;font-family:var(--f-mono);font-weight:500;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:#BDB2D0}
+.flow{display:grid;gap:10px}
+.flow .step{display:flex;gap:14px;align-items:flex-start;background:#1C1430;border-radius:12px;padding:12px 14px}
+.flow .k{flex:none;width:30px;height:30px;border-radius:8px;background:var(--violet);color:#fff;display:grid;place-items:center;font-family:var(--f-mono);font-size:.8rem}
+.flow .step.out .k{background:var(--lime);color:#1C1430}
+.flow small{display:block;color:#A99DBD;font-family:var(--f-mono);font-size:.74rem;margin-top:2px;overflow-wrap:anywhere}
+.calc{margin-top:18px;display:grid;gap:12px}
+.calc label{display:flex;justify-content:space-between;font-size:.88rem;color:#DCD3EA}
+.calc input{width:100%;accent-color:var(--lime)}
+.calc .out{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:4px}
+.calc .out div{background:#1C1430;border-radius:10px;padding:12px}
+.calc .out b{display:block;font-family:var(--f-display);font-size:1.6rem;font-variant-numeric:tabular-nums}
+.calc .out .good b{color:var(--lime)}
+.calc .out span{font-size:.78rem;color:#A99DBD}
+.board{display:grid;gap:8px}
+.board .row{display:grid;grid-template-columns:28px minmax(0,1fr) 90px;gap:10px;align-items:center;font-size:.9rem}
+.board .bar{height:8px;border-radius:5px;background:#3E3060;overflow:hidden;margin-top:5px}
+.board .bar i{display:block;height:100%;background:var(--lime);border-radius:5px;transition:width .6s}
+.board .pos{font-family:var(--f-mono);color:var(--lime)}
+.board .val{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--f-mono);font-size:.82rem}
+.board-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;gap:10px;flex-wrap:wrap}
+.board-top .clock{font-family:var(--f-display);font-size:1.5rem;font-weight:800}
+.gap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:16px}
+.gap div{background:#1C1430;border-radius:10px;padding:10px}
+.gap b{display:block;font-family:var(--f-display);font-size:1.05rem;font-variant-numeric:tabular-nums}
+.gap span{font-size:.72rem;color:#A99DBD;text-transform:uppercase;letter-spacing:.06em}
+.kanban{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:520px){.kanban{grid-template-columns:1fr}}
+.kanban .col{background:#1C1430;border-radius:12px;padding:10px;display:grid;gap:8px;align-content:start}
+.kanban .col > b{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--lime)}
+.kanban .it{background:#2E2249;border-radius:8px;padding:8px 10px;font-size:.82rem;line-height:1.35}
+.kanban .it em{display:block;font-style:normal;font-family:var(--f-mono);font-size:.68rem;color:#A99DBD;margin-top:3px}
+.ex{display:inline-block;margin-top:12px;font-size:.76rem;color:#A99DBD}
+.learn{margin-top:44px;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;border-top:1px solid #3E3060;padding-top:24px;color:#DCD3EA}
+.learn b{color:var(--lime);font-family:var(--f-mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.skills{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.skills{grid-template-columns:1fr}}
+.skill{background:var(--lime-soft);border-radius:var(--r);padding:20px}
+.skill h3{font-size:1.02rem;font-weight:800;color:var(--violet-ink);font-stretch:100%}
+.skill p{margin-top:6px;font-size:.92rem}
+
+/* contact */
+.contact .wrap{padding-block:84px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:end}
+@media (max-width:820px){.contact .wrap{grid-template-columns:1fr}}
+.contact h2{font-size:clamp(2.4rem,6vw,4.6rem);font-weight:900}
+.contact h2 em{font-style:normal;color:var(--lime)}
+.clist{display:grid;gap:10px}
+.citem{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:14px 16px;text-decoration:none;color:#fff}
+.citem small{display:block;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+.citem span{font-weight:700;overflow-wrap:anywhere}
+.citem button{font:inherit;font-size:.8rem;font-weight:700;background:var(--lime);color:#1C1430;border:0;border-radius:999px;padding:6px 12px;cursor:pointer;flex:none}
+.citem .go{flex:none;font-weight:700;color:var(--lime)}
+a.citem:hover{background:rgba(255,255,255,.18)}
+footer{background:var(--violet);color:#fff;border-top:1px solid rgba(255,255,255,.2)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;padding-block:22px;font-size:.82rem;opacity:.85}
+</style>
+</head>
+<body>
+
+
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#topo">AMANNDHA SENA</a>
+    <ul>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#automacoes">Automações</a></li>
+      <li><a href="#competencias">Competências</a></li>
+    </ul>
+    <a class="btn btn-lime" href="#contato">Contato</a>
+  </div>
+</nav>
+
+<header class="hero band-violet" id="topo">
+  <div class="wrap">
+    <div>
+      <div class="me">
+        <img src="img/amanndha.jpg" alt="Foto de Amanndha Sena" width="132" height="176">
+        <p class="eyebrow">Portfólio<br>Recife, Pernambuco</p>
+      </div>
+      <h1 style="margin-top:14px"><span>Amanndha</span><span>Sena</span></h1>
+      <p class="role">Marketing, Comunicação e Go-to-Market</p>
+      <p class="pitch">Estratégia, criação e execução para conectar marcas, pessoas e negócios. Do branding à campanha que mobiliza o time de vendas, e das peças às automações que fazem o marketing rodar mais rápido.</p>
+      <div class="ctas">
+        <a class="btn btn-lime" href="#projetos">Ver projetos</a>
+        <a class="btn btn-ghost" href="#automacoes">Automações</a>
+      </div>
+    </div>
+    <div>
+      <div class="mantra" aria-label="Think. Grow. Be creative.">
+        <span class="on">THINK.</span><span>GROW.</span><span>BE CREATIVE.</span>
+      </div>
+      <div class="hero-meta">
+        <div><b>Estratégia</b>campanhas pensadas para vender, do posicionamento à mecânica</div>
+        <div><b>Criação</b>design, foto, vídeo e copy com identidade de marca</div>
+        <div><b>Execução</b>do evento ao ponto de venda, com IA para ganhar escala</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="brands" aria-label="Marcas que já trabalhei">
+  <div class="brands-label"><span>Marcas que</span><b>já trabalhei</b></div>
+  <div class="marquee"><div class="track" id="track"></div></div>
+</div>
+
+<section id="projetos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Trabalhos selecionados</p><h2>Projetos que conectam marca e venda.</h2></div>
+      <p>Clique em um projeto para ver o escopo, minha atuação e as peças. Use os filtros para navegar por especialidade.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar projetos"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="resultados" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Resultados</p><h2>Conteúdo que amplia a presença.</h2></div>
+      <p>Números registrados nos Insights do Instagram de dois perfis que gerenciei.</p>
+    </div>
+    <div class="results">
+      <article class="res">
+        <div>
+          <h3>Opção Sushi</h3>
+          <p class="period">Instagram</p>
+          <dl>
+            <div><dt>6k → 13k</dt><dd>seguidores: assumi a conta com 6 mil e hoje são 13 mil</dd></div>
+            <div><dt>432.189</dt><dd>visualizações em 90 dias</dd></div>
+            <div><dt>+1.227</dt><dd>saldo de seguidores em 90 dias</dd></div>
+          </dl>
+          <p class="hl">Em 90 dias: 59,5% das visualizações vieram de não seguidores.</p>
+        </div>
+        <img src="img/sushi-insights.jpg" alt="Painel de Insights do Instagram do Opção Sushi em 90 dias" loading="lazy">
+      </article>
+      <article class="res">
+        <div>
+          <h3>Ultra Popular</h3>
+          <p class="period">Instagram · 30 dias</p>
+          <dl>
+            <div><dt>40.494</dt><dd>visualizações</dd></div>
+            <div><dt>+60</dt><dd>saldo de seguidores</dd></div>
+            <div><dt>10.173</dt><dd>espectadores</dd></div>
+          </dl>
+          <p class="hl">49% das visualizações vieram de não seguidores.</p>
+        </div>
+        <img src="img/ultra-insights.jpg" alt="Painel de Insights do Instagram da Ultra Popular em 30 dias" loading="lazy">
+      </article>
+    </div>
+    <p class="fine">* Fonte: capturas de Insights do Instagram. Totais do período, que não representam taxa de crescimento nem vendas atribuídas a uma ação específica.</p>
+  </div>
+</section>
+
+<section id="automacoes" class="band-ink">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Marketing + tecnologia</p><h2>Automações que eu criei para o marketing render mais.</h2></div>
+      <p>Além de criar, eu desenho processos. Estes são fluxos que montei com IA e ferramentas digitais para tirar tarefas repetitivas da rotina e dar mais visibilidade ao time comercial.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Automações">
+      <button class="tab" role="tab" id="t-enc" aria-selected="true" aria-controls="p-enc">Encartes em lote</button>
+      <button class="tab" role="tab" id="t-pla" aria-selected="false" aria-controls="p-pla">Placar de vendas</button>
+      <button class="tab" role="tab" id="t-crm" aria-selected="false" aria-controls="p-crm">CRM de marketing</button>
+    </div>
+
+    <div class="auto" role="tabpanel" id="p-enc" aria-labelledby="t-enc">
+      <div>
+        <p class="eyebrow">Trade marketing · IA</p>
+        <h3>Encartes promocionais gerados em lote.</h3>
+        <div class="psr">
+          <div><b>Problema</b><p>Cerca de 30 encartes por dia montados à mão no Canva, uns 15 minutos cada. Na campanha diária, até 40 promoções mudando só foto e preço.</p></div>
+          <div><b>Solução</b><p>Um fluxo padronizado: template limpo da campanha + planilha exportada do sistema + fotos nomeadas pelo código do produto. A IA monta as artes e um check de consistência confere nome, código e preço antes da entrega.</p></div>
+          <div><b>O que muda</b><p>O tempo sai da montagem repetitiva e vai para estratégia e criação. As peças saem padronizadas, com preço dentro do selo e foto em destaque.</p></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h4>Como o fluxo funciona</h4>
+        <div class="flow">
+          <div class="step"><span class="k">1</span><div>Planilha da campanha<small>EAN · COD · PRODUTO · INDÚSTRIA · PREÇO</small></div></div>
+          <div class="step"><span class="k">2</span><div>Fotos dos produtos<small>arquivos nomeados pelo código</small></div></div>
+          <div class="step"><span class="k">3</span><div>Template limpo da campanha<small>fundo + logo, sem produto nem preço</small></div></div>
+          <div class="step"><span class="k">4</span><div>Geração com prompt padrão<small>layout individual ou grid 2×2</small></div></div>
+          <div class="step out"><span class="k">✓</span><div>Check de consistência e entrega<small>nome, código e preço conferidos</small></div></div>
+        </div>
+        <div class="calc">
+          <h4 style="margin:6px 0 0">Simule o tempo da rotina manual</h4>
+          <label for="qtd">Encartes por dia <b id="qtdv">30</b></label>
+          <input type="range" id="qtd" min="5" max="60" step="1" value="30">
+          <label for="min">Minutos por encarte no manual <b id="minv">15</b></label>
+          <input type="range" id="min" min="5" max="30" step="1" value="15">
+          <div class="out">
+            <div><b id="hdia">7h30</b><span>por dia montando à mão</span></div>
+            <div class="good"><b id="hmes">165h</b><span>por mês (22 dias úteis)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auto" role="tabpanel" id="p-pla" aria-labelledby="t-pla" hidden>
+      <div>
+        <p class="eyebrow">Sales enablement · Dados</p>
+        <h3>Placar de vendas de hora em hora.</h3>
+        <div class="psr">
+          <div><b>Problema</b><p>O time de vendas precisava acompanhar o dia em tempo real, e o relatório era montado manualmente a cada hora.</p></div>
+          <div><b>Solução</b><p>Um modelo replicável de relatório com top 5 vendedores e meta × realizado × gap, enviado no WhatsApp com a marca da empresa. Depois virou um placar em site próprio, com acesso por login.</p></div>
+          <div><b>O que muda</b><p>A liderança ganhou um padrão que qualquer pessoa consegue gerar, e o time vê a corrida pela meta ao longo do dia.</p></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="board-top"><h4 style="margin:0">Atualização</h4><span class="clock" id="clock">11h</span></div>
+        <div class="gap">
+          <div><b id="g-meta">R$ 60.000</b><span>Meta</span></div>
+          <div><b id="g-real">R$ 0</b><span>Realizado</span></div>
+          <div><b id="g-gap">R$ 0</b><span>Gap</span></div>
+        </div>
+        <div class="board" id="board"></div>
+        <button class="btn btn-lime" id="tick" style="margin-top:18px">Avançar 1 hora</button>
+        <span class="ex">Dados ilustrativos, apenas para demonstrar o modelo.</span>
+      </div>
+    </div>
+
+    <div class="auto" role="tabpanel" id="p-crm" aria-labelledby="t-crm" hidden>
+      <div>
+        <p class="eyebrow">Gestão · Produtividade</p>
+        <h3>CRM pessoal para três frentes de marketing.</h3>
+        <div class="psr">
+          <div><b>Problema</b><p>Muitas demandas paralelas: varejo, atacado e comunicação interna, com datas, campanhas e comunicados diários.</p></div>
+          <div><b>Solução</b><p>Um app interativo para organizar as atividades da Ultra Farmácia, da Ultra Atacado e do endomarketing em um só lugar, com status e prazos.</p></div>
+          <div><b>O que muda</b><p>Visão clara do que está em andamento, do que foi entregue e do que vem pela frente, sem depender da memória ou de listas soltas.</p></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h4>Visão do quadro</h4>
+        <div class="kanban">
+          <div class="col"><b>Ultra Farmácia</b>
+            <div class="it">Post de data comemorativa<em>Instagram · conteúdo</em></div>
+            <div class="it">Vídeo com a equipe<em>Reels · gravação</em></div>
+          </div>
+          <div class="col"><b>Ultra Atacado</b>
+            <div class="it">Promo do dia<em>encartes · WhatsApp</em></div>
+            <div class="it">Campanha de vendedores<em>regras · acompanhamento</em></div>
+          </div>
+          <div class="col"><b>Endomarketing</b>
+            <div class="it">Bom dia do time<em>diário</em></div>
+            <div class="it">Comunicado interno<em>WhatsApp</em></div>
+          </div>
+        </div>
+        <span class="ex">Itens ilustrativos das frentes acompanhadas.</span>
+      </div>
+    </div>
+
+    <div class="learn">
+      <b>Em formação</b>
+      <span>Google Cybersecurity Certificate, com labs práticos publicados no GitHub.</span>
+    </div>
+  </div>
+</section>
+
+<section id="competencias">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><p class="eyebrow">Competências</p><h2>Do planejamento à entrega.</h2></div>
+      <p>O conjunto de habilidades que aplico nos projetos, da estratégia de marca à execução no ponto de venda.</p>
+    </div>
+    <div class="skills">
+      <div class="skill"><h3>Brand Strategy & Management</h3><p>Branding e gestão de marca com consistência visual e de comunicação.</p></div>
+      <div class="skill"><h3>Campaign Planning & Execution</h3><p>Campanhas comerciais, sazonais, de incentivo e de relacionamento.</p></div>
+      <div class="skill"><h3>Trade Marketing & Sales Enablement</h3><p>Mecânicas, premiações e comunicação para mobilizar equipes de venda B2B.</p></div>
+      <div class="skill"><h3>Content Strategy & Social Media</h3><p>Planejamento editorial, gestão de redes e conteúdo que agrega valor.</p></div>
+      <div class="skill"><h3>Photo, Video & Editing</h3><p>Roteiro, captação e edição de fotos e vídeos de produto, equipe e eventos.</p></div>
+      <div class="skill"><h3>Design, Copy & Automação</h3><p>Artes, legendas e mensagens comerciais, com fluxos de IA para produzir em escala.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact band-violet" id="contato" style="padding:0">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Vamos conectar ideias e negócios?</p>
+      <h2 style="margin-top:14px">Criatividade com <em>visão de negócio.</em></h2>
+    </div>
+    <div class="clist">
+      <div class="citem"><div><small>E-mail</small><span id="mail">amanndha89@gmail.com</span></div><button type="button" id="copy">Copiar</button></div>
+      <a class="citem" href="https://wa.me/558197446707" target="_blank" rel="noopener"><div><small>WhatsApp</small><span>+55 81 9744-6707</span></div><span class="go">Abrir ↗</span></a>
+      <a class="citem" href="https://www.linkedin.com/in/amanndhasena" target="_blank" rel="noopener"><div><small>LinkedIn</small><span>/in/amanndhasena</span></div><span class="go">Abrir ↗</span></a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>Amanndha Sena · Marketing · Comunicação · Go-to-Market</span><span>Think. Grow. Be creative.</span></div></footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="dlg-head">
+    <p class="eyebrow" id="dlg-num"></p>
+    <h3 id="dlg-title"></h3>
+    <p id="dlg-sub"></p>
+    <button class="close" id="dlg-close" aria-label="Fechar">×</button>
+  </div>
+  <div class="dlg-body">
+    <div class="blk" id="dlg-text"></div>
+    <div class="gal" id="dlg-gal"></div>
+  </div>
+</dialog>
+
+<script>
+/* Para trocar o nome pelo logo: salve o arquivo em logos/ com o nome indicado (png ou svg). Se o arquivo não existir, aparece o nome. */
+const BRANDS=[["EMS","ems"],["União Química","uniao-quimica"],["Piracanjuba","piracanjuba"],["Vinho Canção","vinho-cancao","#c10c2d"],["Cimed","cimed"],["Geolab","geolab"],["Emana","emana"],["Blowtex","blowtex"],["Ultra Popular","ultra-popular","#c20e1a"],["BabyDu","babydu","#f6ead4"],["ADA","ada","#fff6f1"]];
+const track=document.getElementById('track');
+track.innerHTML=[...BRANDS,...BRANDS].map(([n,f,bg],i)=>`<span class="logo"${bg?` style="background:${bg}"`:''}${i>=BRANDS.length?' aria-hidden="true"':''}><img src="logos/${f}.png" alt="${n}" loading="lazy" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='logos/${f}.svg'}else{this.parentNode.textContent='${n}'}"></span>`).join('');
+
+const P=[
+ {n:"01",t:"Opção Sushi",h:"Uma marca que abre o apetite.",sub:"Branding, produção de conteúdo e presença digital para o restaurante.",cat:["Branding","Social media","Foto e vídeo"],
+  tags:["Branding","Social media","Fotografia","Vídeo"],cover:"sushi-1",
+  proj:"Desenvolvimento da marca e do trabalho de social media do Opção Sushi, conectando a apresentação dos produtos à comunicação com o público.",
+  act:"Criação de campanhas e conteúdos, fotografia de produtos, captação de vídeos e comunicação de ofertas e novidades.",
+  stats:[["6 mil → 13 mil","seguidores desde que assumi"],["432.189","visualizações em 90 dias"],["59.509","espectadores em 90 dias"]],statNote:"Instagram.",
+  imgs:["sushi-1","sushi-3","sushi-4","sushi-5","sushi-6","sushi-7","sushi-2","sushi-insights"]},
+ {n:"02",t:"Vinho Canção",h:"Branding no Carnaval.",sub:"Desenvolvimento de marca no Galo da Madrugada, o maior bloco de rua do mundo.",cat:["Branding","Social media","Eventos"],
+  tags:["Branding","Carnaval","Social media","Conteúdo"],cover:"cancao-2",
+  proj:"Branding e desenvolvimento da presença do Vinho Canção no Carnaval, com atuação no Camarote do Zezo durante o Galo da Madrugada.",
+  act:"Campanhas, social media, captação de fotos e vídeos e execução de ações de marketing, conectando a marca à experiência do público no evento.",
+  imgs:["cancao-2","cancao-feed","cancao-1","cancao-3","cancao-4","cancao-5"]},
+ {n:"03",t:"BabyDu",h:"Desenvolvimento de marca.",sub:"Branding e desenvolvimento de marca em conjunto com o Grupo SDM.",cat:["Branding","Trade marketing","Design"],
+  tags:["Brand development","Trade marketing","Campanhas"],cover:"babydu-1",
+  proj:"Participação no desenvolvimento da marca BabyDu, conectando sua identidade à apresentação dos produtos e à comunicação comercial.",
+  act:"Desenvolvimento de marca em conjunto com o Grupo SDM, social media e criação de campanhas relacionadas ao produto e à equipe de vendas.",
+  imgs:["babydu-1","babydu-2","babydu-3","babydu-4","babydu-feed"]},
+ {n:"04",t:"Marina Sobral",h:"Uma presença digital acolhedora.",sub:"Identidade visual e social media para a psicopedagoga Marina Sobral.",cat:["Branding","Social media","Design"],
+  tags:["Identidade visual","Content marketing","Vídeo"],cover:"marina-1",
+  proj:"Construção de identidade visual e organização do feed, com conteúdos educativos sobre aprendizagem, desenvolvimento e psicopedagogia.",
+  act:"Desenvolvimento da identidade, criação de artes e carrosséis, produção de vídeos e trabalho de social media.",
+  imgs:["marina-1","marina-2"]},
+ {n:"05",t:"Indústria farmacêutica",h:"Campanhas, treinamentos e relacionamento com a indústria.",sub:"Trade marketing para distribuição farmacêutica: Cimed, ADA, EMS, Medibras e Grupo SDM.",cat:["Trade marketing","Eventos","Design"],
+  tags:["Trade marketing","Sales enablement","Eventos","Relacionamento B2B"],cover:"cimed-1",
+  secs:[["Relacionamento com a indústria","Representei a empresa no evento da Cimed, em contato com a indústria e seus representantes, na interface entre marketing, parceiros e equipe comercial."],
+        ["Treinamentos ADA e EMS","<b>ADA:</b> convidei a empresa e organizei o treinamento para vendedores, incluindo local, alimentação e logística, além do social media e marketing do evento. <b>EMS:</b> organização de evento de treinamento para a equipe comercial, com registros dos materiais e da ambientação."],
+        ["Campanhas comerciais","Planejamento e criação de campanhas para a Medibras e o Grupo SDM, conectando produtos, condições comerciais e incentivos à rotina das equipes de vendas. Desenvolvi as peças, apresentei regras e premiações e fiz a comunicação com o time comercial para apoiar a execução."]],
+  imgs:["cimed-1","cimed-2","ev-ada-1","ev-ada-2","ev-ems-1","ev-ems-2","camp-megafeirao","camp-sacolao","camp-premios-1","camp-premios-2","camp-geolab","camp-ccm"],wide:["camp-premios-1","camp-premios-2"]},
+ {n:"06",t:"Ultra Popular",h:"Brand marketing e criação de conteúdo.",sub:"Atuação de marketing em uma filial da Ultra Popular, iniciada em setembro.",cat:["Branding","Social media","Foto e vídeo","Design"],
+  tags:["Brand management","Social media","Vídeo","Copy"],cover:"ultra-feed",
+  proj:"Gestão da presença local da marca, aplicando a identidade da rede às campanhas, aos conteúdos e aos pontos de contato da unidade.",
+  act:"Branding local, campanhas comerciais e sazonais, planejamento editorial, divulgação de serviços farmacêuticos, roteiro, gravação e edição de vídeos, fotografia, artes e legendas.",
+  stats:[["40.494","visualizações"],["+60","seguidores"],["10.173","espectadores"]],statNote:"Instagram, período de 30 dias.",
+  imgs:["ultra-feed","ultra-insights"]},
+ {n:"07",t:"Adega San Martin",h:"Uma identidade que atravessa o feed.",sub:"Branding, design e social media para a @adega.sanmartin.",cat:["Branding","Social media","Design","Foto e vídeo"],
+  tags:["Branding","Design","Fotografia","Campanhas sazonais"],cover:"adega-cachaca",
+  proj:"Desenvolvimento de branding e identidade visual, design de peças, fotografia de produtos, produção de vídeos e gestão de social media.",
+  act:"Conteúdos de produto, dicas e campanhas sazonais aplicados à presença digital da adega, como o Dia Nacional da Cachaça e a Semana da Cachaça.",
+  imgs:["adega-cachaca","adega-canazul","adega-semana","adega-1","adega-2","adega-3"]}
+];
+const CATS=["Todos","Branding","Social media","Trade marketing","Eventos","Design","Foto e vídeo"];
+const grid=document.getElementById('grid'),filters=document.getElementById('filters');
+let cur="Todos";
+function draw(){
+  grid.innerHTML=P.filter(p=>cur==="Todos"||p.cat.includes(cur)).map(p=>`
+   <button class="card" data-n="${p.n}" aria-label="Abrir projeto ${p.t}">
+     <div class="cover"><img src="img/${p.cover}.jpg" alt="" loading="lazy"><span class="num">${p.n}</span></div>
+     <div class="body"><h3>${p.t}</h3><p>${p.h}</p>
+       <div class="tags">${p.tags.slice(0,3).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+       <span class="more">Ver projeto →</span></div>
+   </button>`).join('');
+}
+filters.innerHTML=CATS.map(c=>`<button class="chip" id="f-${c.replace(/\W+/g,'')}" aria-pressed="${c===cur}">${c}</button>`).join('');
+filters.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;cur=b.textContent;
+  filters.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));draw();});
+draw();
+
+const dlg=document.getElementById('dlg');
+grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openP(P.find(p=>p.n===c.dataset.n));});
+function openP(p){
+  document.getElementById('dlg-num').textContent=p.n+" / "+p.t;
+  document.getElementById('dlg-title').textContent=p.h;
+  document.getElementById('dlg-sub').textContent=p.sub;
+  const L=p.labels||["O projeto","Minha atuação"];
+  const S=p.secs||[[L[0],p.proj],[L[1],p.act]];
+  let h=S.map(s=>`<div><span class="pill">${s[0]}</span><p>${s[1]}</p></div>`).join('');
+  if(p.stats)h+=`<div><div class="stats-mini">${p.stats.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div><p class="note" style="margin-top:8px">${p.statNote} Fonte: Insights do Instagram.</p></div>`;
+  h+=`<div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>`;
+  document.getElementById('dlg-text').innerHTML=h;
+  document.getElementById('dlg-gal').innerHTML=p.imgs.map(i=>`<img src="img/${i}.jpg" alt="Peça do projeto ${p.t}" loading="lazy" class="${(p.wide||[]).includes(i)?'wide':''}">`).join('');
+  dlg.showModal();dlg.scrollTop=0;
+}
+document.getElementById('dlg-close').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+document.getElementById('dlg-gal').addEventListener('click',e=>{
+  if(e.target.tagName!=='IMG')return;
+  const z=document.createElement('div');z.className='zoom';z.innerHTML=`<img src="${e.target.src}" alt="${e.target.alt}">`;
+  z.onclick=()=>z.remove();dlg.appendChild(z);
+});
+
+/* mantra */
+const ms=[...document.querySelectorAll('.mantra span')];let mi=0;
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(()=>{ms[mi].classList.remove('on');mi=(mi+1)%ms.length;ms[mi].classList.add('on');},1800);
+}
+
+/* tabs */
+const tabs=[...document.querySelectorAll('.tab')];
+tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});}));
+
+/* calc */
+const q=document.getElementById('qtd'),m=document.getElementById('min');
+function fmt(min){const h=Math.floor(min/60),r=Math.round(min%60);return r?`${h}h${String(r).padStart(2,'0')}`:`${h}h`;}
+function calc(){const d=q.value*m.value;document.getElementById('qtdv').textContent=q.value;document.getElementById('minv').textContent=m.value;
+  document.getElementById('hdia').textContent=fmt(d);document.getElementById('hmes').textContent=Math.round(d*22/60)+"h";}
+q.oninput=calc;m.oninput=calc;calc();
+
+/* placar ilustrativo */
+const SELL=[["Vendedor A",0],["Vendedor B",0],["Vendedor C",0],["Vendedor D",0],["Vendedor E",0]];
+const RATE=[2100,1700,1500,1200,900];let hour=10;const META=60000;
+const brl=v=>"R$ "+Math.round(v).toLocaleString('pt-BR');
+function tick(){hour=hour>=18?9:hour+1;
+  if(hour===9)SELL.forEach(s=>s[1]=0);
+  SELL.forEach((s,i)=>s[1]+=RATE[i]*(0.6+((i*7+hour*3)%10)/10));
+  const tot=SELL.reduce((a,s)=>a+s[1],0)*3.2;
+  document.getElementById('clock').textContent=hour+"h";
+  document.getElementById('g-real').textContent=brl(tot);
+  document.getElementById('g-gap').textContent=brl(Math.max(0,META-tot));
+  const sorted=[...SELL].sort((a,b)=>b[1]-a[1]);const max=sorted[0][1]||1;
+  document.getElementById('board').innerHTML=sorted.map((s,i)=>`<div class="row"><span class="pos">${i+1}º</span><div>${s[0]}<div class="bar"><i style="width:${s[1]/max*100}%"></i></div></div><span class="val">${brl(s[1])}</span></div>`).join('');
+}
+document.getElementById('g-meta').textContent=brl(META);
+document.getElementById('tick').onclick=tick;tick();tick();
+
+/* copy */
+document.getElementById('copy').addEventListener('click',async e=>{
+  const b=e.currentTarget,t=document.getElementById('mail');
+  try{await navigator.clipboard.writeText(t.textContent);b.textContent="Copiado";}
+  catch{const r=document.createRange();r.selectNodeContents(t);const s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent="Selecionado";}
+  setTimeout(()=>b.textContent="Copiar",1800);
+});
+</script>
+
+</body>
+</html>
